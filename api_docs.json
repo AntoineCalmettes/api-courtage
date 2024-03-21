@@ -1,0 +1,9 @@
+[
+    {
+        "path": "\/api",
+        "name": "app_api_home",
+        "methods": [
+            "GET"
+        ]
+    }
+]

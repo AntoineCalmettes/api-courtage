@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            position: relative;
+        }
+        li:hover {
+            background-color: #f5f5f5;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .method-square {
+            position: absolute;
+            left: -90px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+        }
+        .get { background-color: green; }
+        .post { background-color: blue; }
+        .put { background-color: yellow; }
+        .patch { background-color: orange; }
+        .delete { background-color: red; }
+        .code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5f5;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Documentation</h1><h2>User</h2><ul><li><div class="method-square get"></div><strong>GET</strong> all_users<br><strong>Path:</strong> /api/users<br><strong>Description:</strong> Get ALL users<br></li><li><div class="method-square post"></div><strong>POST</strong> create_user<br><strong>Path:</strong> /api/users<br><strong>Description:</strong> create user<br><strong>Body:</strong><pre class="code">{
+    &quot;name&quot;: &quot;string&quot;
+}</pre></li></ul><h2>Home</h2><ul><li><div class="method-square get"></div><strong>GET</strong> app_api_home<br><strong>Path:</strong> /api<br><strong>Description:</strong> Get the API version<br></li></ul></body>
+</html>
